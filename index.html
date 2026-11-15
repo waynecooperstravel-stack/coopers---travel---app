@@ -3,139 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101D35">
+  <meta name="theme-color" content="#061a36">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Cooper's Travel">
+  <meta name="description" content="Cooper's Travel Barnsley - Driven by Wayne">
   <title>Cooper's Travel | Driven by Wayne</title>
+
   <link rel="manifest" href="./manifest.json">
 
   <style>
-    * { box-sizing: border-box; }
-    body {margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(145deg, #101D35 0%, #1B3152 55%, #101D35 100%);
-  color: #FFFFFF;
-  text-align: center;
-  min-height: 100vh;
-  letter-spacing: 0.3px;
-}
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      min-height: 100%;
+      background: #061a36;
       font-family: Arial, sans-serif;
-      background: #101D35;
-      color: white;
-      text-align: center;
     }
-    header { padding: 38px 20px 20px; }
-    .logo {
-      color: #E4C477;
-      font-size: 32px;
-      font-weight: bold;
-      letter-spacing: 2px;
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 0;
     }
-    .tagline {
-      color: #E4C477;
-      margin-top: 9px;
-      letter-spacing: 3px;
-      font-size: 13px;
+
+    .app {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: #061a36;
     }
-    .hero { padding: 25px 22px 35px; }
-    h1 { font-size: 27px; margin-bottom: 12px; }
-    .intro {
-      color: #e1e5ed;
-      line-height: 1.6;
-      max-width: 420px;
-      margin: 0 auto 26px;
-    }
-    .button {
+
+    .poster {
       display: block;
-      max-width: 360px;
-      margin: 13px auto;
-      padding: 17px 15px;
-      border-radius: 9px;
+      width: 100%;
+      height: auto;
+    }
+
+    .hotspot {
+      position: absolute;
+      display: block;
+      border-radius: 18px;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
+      -webkit-tap-highlight-color: transparent;
     }
-    .gold { background: #E4C477; color: #101D35; }
-    .outline {
-      border: 2px solid #E4C477;
-      color: #E4C477;
+
+    .hotspot:focus-visible {
+      outline: 4px solid white;
+      outline-offset: -5px;
     }
-    .services {
-      background: #172945;
-      padding: 28px 20px;
+
+    /* Book Your Journey */
+    .book {
+      left: 3.5%;
+      top: 44.7%;
+      width: 45.8%;
+      height: 8.7%;
     }
-    .services h2 { color: #E4C477; }
-    .services p { line-height: 1.9; }
-    footer {
-      padding: 25px 15px;
-      color: #cbd2df;
-      font-size: 13px;
+
+    /* Call Wayne */
+    .call {
+      left: 50.8%;
+      top: 44.7%;
+      width: 45.7%;
+      height: 8.7%;
+    }
+
+    /* WhatsApp Wayne */
+    .whatsapp {
+      left: 3.5%;
+      top: 54.5%;
+      width: 45.8%;
+      height: 8.3%;
+    }
+
+    /* Visit Our Website */
+    .website {
+      left: 50.8%;
+      top: 54.5%;
+      width: 45.7%;
+      height: 8.3%;
+    }
+
+    @media (min-width: 701px) {
+      body {
+        padding: 20px;
+      }
+
+      .app {
+        border-radius: 14px;
+        box-shadow: 0 12px 45px rgba(0,0,0,0.45);
+      }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="logo">COOPER'S TRAVEL</div>
-    <div class="tagline">DRIVEN BY WAYNE</div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1>Your journey, our priority.</h1>
-      <p class="intro">
-        Professional, friendly minibus travel from Barnsley.
-        Airport transfers, coastal journeys, seaport transfers
-        and transport for all occasions.
-      </p>
+  <main class="app">
 
-      <a class="button gold"
-   href="https://www.cooperstravelbarnsley.co.uk/contact-us">
-   BOOK YOUR JOURNEY
-</a>
+    <img
+      class="poster"
+      src="./harold-premium.png"
+      alt="Cooper's Travel premium app screen featuring Harold"
+    >
 
-      <a class="button outline"
-         href="tel:07930565671">
-        CALL WAYNE
-      </a>
+    <a
+      class="hotspot book"
+      href="https://www.cooperstravelbarnsley.co.uk/contact-us"
+      aria-label="Book your journey"
+      title="Book your journey">
+    </a>
 
-      <a class="button outline"
-         href="https://wa.me/447930565671">
-        WHATSAPP WAYNE
-      </a>
+    <a
+      class="hotspot call"
+      href="tel:07930565671"
+      aria-label="Call Wayne"
+      title="Call Wayne">
+    </a>
 
-      <a class="button outline"
-         href="https://www.cooperstravelbarnsley.co.uk/">
-        VISIT OUR WEBSITE
-      </a>
-    </section>
+    <a
+      class="hotspot whatsapp"
+      href="https://wa.me/447930565671"
+      target="_blank"
+      rel="noopener"
+      aria-label="WhatsApp Wayne"
+      title="WhatsApp Wayne">
+    </a>
 
-    <section class="services">
-      <h2>OUR SERVICES</h2>
-      <p>
-        Airport Transfers<br>
-        Ferry & Cruise Ports<br>
-        Coastal Journeys<br>
-        Sporting Events<br>
-        Private Group Travel
-      </p>
-      <p>Professional service. Personal touch. Every journey.</p>
-    </section>
+    <a
+      class="hotspot website"
+      href="https://www.cooperstravelbarnsley.co.uk/"
+      target="_blank"
+      rel="noopener"
+      aria-label="Visit our website"
+      title="Visit our website">
+    </a>
+
   </main>
-
-  <footer>
-    Cooper's Travel Barnsley<br>
-    Established 2020
-  </footer>
 
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./service-worker.js')
-          .catch(error => console.log('Offline setup unavailable', error));
+        navigator.serviceWorker
+          .register('./service-worker.js')
+          .catch(error => {
+            console.log('Offline setup unavailable', error);
+          });
       });
     }
   </script>
+
 </body>
 </html>

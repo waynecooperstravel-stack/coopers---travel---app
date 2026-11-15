@@ -1,0 +1,19 @@
+{
+  "name": "Cooper's Travel Barnsley",
+  "short_name": "Cooper's Travel",
+  "description": "Professional minibus travel from Barnsley",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#101D35",
+  "theme_color": "#101D35",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

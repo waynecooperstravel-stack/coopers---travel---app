@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101D35">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Cooper's Travel">
+  <title>Cooper's Travel | Driven by Wayne</title>
+  <link rel="manifest" href="./manifest.json">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101D35;
+      color: white;
+      text-align: center;
+    }
+    header { padding: 38px 20px 20px; }
+    .logo {
+      color: #E4C477;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .tagline {
+      color: #E4C477;
+      margin-top: 9px;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+    .hero { padding: 25px 22px 35px; }
+    h1 { font-size: 27px; margin-bottom: 12px; }
+    .intro {
+      color: #e1e5ed;
+      line-height: 1.6;
+      max-width: 420px;
+      margin: 0 auto 26px;
+    }
+    .button {
+      display: block;
+      max-width: 360px;
+      margin: 13px auto;
+      padding: 17px 15px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .gold { background: #E4C477; color: #101D35; }
+    .outline {
+      border: 2px solid #E4C477;
+      color: #E4C477;
+    }
+    .services {
+      background: #172945;
+      padding: 28px 20px;
+    }
+    .services h2 { color: #E4C477; }
+    .services p { line-height: 1.9; }
+    footer {
+      padding: 25px 15px;
+      color: #cbd2df;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">COOPER'S TRAVEL</div>
+    <div class="tagline">DRIVEN BY WAYNE</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Your journey, our priority.</h1>
+      <p class="intro">
+        Professional, friendly minibus travel from Barnsley.
+        Airport transfers, coastal journeys, seaport transfers
+        and transport for all occasions.
+      </p>
+
+      <a class="button gold"
+         href="https://www.cooperstravelbarnsley.co.uk/">
+        BOOK YOUR JOURNEY
+      </a>
+
+      <a class="button outline"
+         href="tel:07930565671">
+        CALL WAYNE
+      </a>
+
+      <a class="button outline"
+         href="https://wa.me/447930565671">
+        WHATSAPP WAYNE
+      </a>
+
+      <a class="button outline"
+         href="https://www.cooperstravelbarnsley.co.uk/">
+        VISIT OUR WEBSITE
+      </a>
+    </section>
+
+    <section class="services">
+      <h2>OUR SERVICES</h2>
+      <p>
+        Airport Transfers<br>
+        Ferry & Cruise Ports<br>
+        Coastal Journeys<br>
+        Sporting Events<br>
+        Private Group Travel
+      </p>
+      <p>Professional service. Personal touch. Every journey.</p>
+    </section>
+  </main>
+
+  <footer>
+    Cooper's Travel Barnsley<br>
+    Established 2020
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+          .catch(error => console.log('Offline setup unavailable', error));
+      });
+    }
+  </script>
+</body>
+</html>
